@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-color: #1c1c1c;
+  --secondary-color: #feda4a;
+  --accent-color: #e74c3c;
+  --text-color: #f0f0f0;
+  --card-bg: #333;
+  --layout-bg: #6b6b6b;
+  --hover-color: lighten(#1c1c1c, 10%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  
+}
+
+html {
+  height: 100vh;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+button {
+  width: auto;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background 0.3s;
+  opacity: 0.8;
+
+  &:hover {
+    background: var(--secondary-color);
+    opacity: 1;
+  }
+}
