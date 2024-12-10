@@ -9,7 +9,7 @@ Repositório do projeto criado no meu canal do youtube sobre a as novas API`s do
 Clone o repositório
 
 ```bash
-git clone https://github.com/lucasspeixoto/angular-19-resource-api
+git clone https://github.com/lucasspeixoto/angular-19-resource-api.git
 ```
 
 ## Execute
