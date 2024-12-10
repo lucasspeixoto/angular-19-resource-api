@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="input-container">
+    <input [value]="filmSearchWordKey()" (input)="searchFilmHandler($event)" type="text" placeholder="Search Film" />
+  </div>
+
+  <button type="button" class="reload-button" (click)="films.reload()">Reload</button>
+
+  @if(films.error()) {
+    <p class="error-message">An error occurred: {{ films.error() }}</p>
+  }
+
+  @if(films.isLoading()) {
+    <app-loading />
+  } @else {
+    <div class="film-gallery">
+    @for(film of films.value(); track film.title) {
+    <section class="film-card">
+      <div class="film-card-details">
+        <h2>{{ film.title }}</h2>
+        <p>
+          <strong>Release Date: </strong>{{ film.release_date | filmAppDate }}
+        </p>
+        <p><strong>Director: </strong>{{ film.director }}</p>
+        <p><strong>Producer: </strong>{{ film.producer }}</p>
+      </div>
+    </section>
+    }
+  </div>}
+</div>
