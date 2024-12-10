@@ -1,6 +1,6 @@
-# Angular 19 - Resource API
+# Angular 19: resource e rxResource API`s - O fim dos observables ?
 
-Repositório do projeto criado no meu canal do youtube sobre a nova resource API lançada no angular 19, acesse aqui: [Vídeo](https://youtu.be/pNFMXouQVo8)
+Repositório do projeto criado no meu canal do youtube sobre a as novas API`s do angular 19, o resource e rxResource, acesse aqui: [Vídeo](https://youtu.be/urfBXtB-YWU)
 
 ![Capa](public/capa.png 'Capa')
 
